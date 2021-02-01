@@ -1,0 +1,9 @@
+source ~/.config/neomutt/settings
+source ~/.config/neomutt/colors
+source ~/.config/neomutt/mappings
+
+# accounts
+folder-hook $folder 'source ~/.config/neomutt/accounts/test'
+folder-hook $folder 'source ~/.config/neomutt/accounts/personal'
+folder-hook $folder 'source ~/.config/neomutt/accounts/career'
+source ~/.config/neomutt/accounts/career

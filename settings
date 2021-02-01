@@ -1,0 +1,18 @@
+set realname = "Alexander Lee"
+set mailcap_path = "~/.config/neomutt/mailcap"
+set header_cache = "~/.config/neomutt/cache/headers"
+set message_cachedir = "~/.config/neomutt/cache/bodies"
+set signature = "~/.config/neomutt/.signature"
+unset sig_dashes  # remove dashes above signature
+set editor = "nvim"
+set smtp_authenticators = "gssapi:login"  # SMTP server login methods
+set mail_check = 120  # frequency (secs) to look for new mail
+set timeout = 300  # input wait time (secs) timeout
+set sort = "threads"  # sort messages in the "index" menu by threads
+set sort_aux= "reverse-last-date-received"  # sort threads by reverse last date received
+set sidebar_visible
+set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S"
+set mail_check_stats
+set pager_index_lines = 5
+alternative_order text/plain text/html *  # order of preference to determine multipart/alternative body display
+auto_view text/html  # automatically convert html to plain when displaying messages
