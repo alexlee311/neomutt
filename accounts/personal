@@ -3,7 +3,7 @@ set from = $imap_user
 set folder = "imaps://$imap_user@imap.gmail.com"  # mailbox location
 set spoolfile = "+INBOX"  # folder, inside the mailbox, where emails arrive
 set postponed = "+[Gmail]/Drafts"  # folder to use to store postponed messages (drafts)
-set record = "+[Gmail]/Sent Mail"  # directory where gmail stores sent messages
+unset record  # Gmail auto-stores sent mail in "+[Gmail]/Sent Mail"
 set trash = "+[Gmail]/Trash"  # directory where to store delete emails, instead of purging them directly
 unmailboxes *
 mailboxes =INBOX =[Gmail]/Sent\ Mail =[Gmail]/Starred =[Gmail]/Drafts =[Gmail]/Spam =[Gmail]/Trash
